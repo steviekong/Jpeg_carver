@@ -7,11 +7,11 @@ from PIL import Image
 Simple image carver. Right now it will assemble any and all JPEGS found including partial fragmented files.
 You must have pillow installed. You can do that by `pip install pillow`.
 
-YOU MUST HAVE PYTHON 3 NOT 2! THE Pillow version used is 3 and I can't gurantee any of this works on python 2.
+YOU MUST HAVE PYTHON 3 NOT 2! THE Pillow version used is 3 and I can't guarantee any of this works on python 2.
 '''
 def main():
 	if len(sys.argv) < 2:
-		print("Invalid input, you must specifiy a file as the first argument.")
+		print("Invalid input, you must specify a file as the first argument.")
 		exit(0)
 	readFile(sys.argv[1])
 # Reads file and creates the list of SOI AND EOI markers
